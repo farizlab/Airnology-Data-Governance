@@ -1,0 +1,4 @@
+data/raw/
+data/processed/
+database/*.db
+.DS_Store
