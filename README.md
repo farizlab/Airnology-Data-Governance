@@ -82,21 +82,33 @@ Airnology-Data-Governance/
 │   └── processed/
 │
 ├── database/
-│   └── airnology.db
+│   └── airnology.db  # generated locally, not tracked
 │
 ├── analysis/
 │   ├── setup_database.py
 │   ├── create_tables.py
 │   ├── insert_master_data.py
 │   ├── load_registration.py
+│   ├── import_registration.py
 │   ├── insert_participants.py
 │   ├── insert_submissions.py
 │   ├── insert_criteria.py
 │   ├── insert_assessment_ecc.py
 │   ├── insert_ranking_ecc.py
+│   ├── migrate_assessment.py
 │   ├── data_quality_report.py
+│   ├── sql_analysis.py
 │   ├── visualize_data.py
-│   └── sql_analysis.py
+│   ├── check_anomaly.py
+│   ├── check_assessment_ecc.py
+│   ├── check_assessment_table.py
+│   ├── check_participant_duplicates.py
+│   ├── check_ranking_table.py
+│   ├── check_registration.py
+│   ├── check_submissions.py
+│   ├── inspect_assessment.py
+│   ├── preview_participants.py
+│   └── reset_registration.py
 │
 ├── documentation/
 │   ├── data_quality_report.md
