@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 DB_PATH = "database/airnology.db"
+OUTPUT_PATH = "documentation/figures/"
 
 
 # 1. Koneksi ke database
@@ -37,6 +38,7 @@ plt.xlabel("Competition")
 plt.ylabel("Number of Participants")
 plt.xticks(rotation=20)
 plt.tight_layout()
+plt.savefig(OUTPUT_PATH + "participants_by_competition.png", dpi=300)
 plt.show()
 
 
@@ -64,6 +66,7 @@ plt.xlabel("Competition")
 plt.ylabel("Number of Teams")
 plt.xticks(rotation=20)
 plt.tight_layout()
+plt.savefig(OUTPUT_PATH + "teams_by_competition.png", dpi=300)
 plt.show()
 
 
@@ -91,6 +94,7 @@ plt.xlabel("Competition")
 plt.ylabel("Number of Submissions")
 plt.xticks(rotation=20)
 plt.tight_layout()
+plt.savefig(OUTPUT_PATH + "submissions_by_competition.png", dpi=300)
 plt.show()
 
 
@@ -98,3 +102,4 @@ plt.show()
 conn.close()
 
 print("Visualisasi selesai.")
+print("Grafik disimpan di documentation/figures/")
